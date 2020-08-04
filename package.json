@@ -1,0 +1,47 @@
+{
+  "name": "document-api",
+  "version": "1.0.0",
+  "description": "a document api",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --runInBand --unhandled-rejections=strict",
+    "coverage": "jest --coverage --runInBand --unhandled-rejections=strict"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "resolutions": {
+    "tslib": "1.11.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/debug": "^4.1.5",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^13.13.5",
+    "@types/sinon": "^9.0.3",
+    "@types/winston": "^2.4.4",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "sinon": "^9.0.2",
+    "ts-jest": "^26.0.0",
+    "ts-node": "^8.10.1",
+    "ts-sinon": "^1.2.0",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.709.0",
+    "bufferutil": "^4.0.1",
+    "commander": "^5.1.0",
+    "debug": "^4.1.1",
+    "reflect-metadata": "^0.1.10",
+    "winston": "^3.2.1"
+  }
+}
